@@ -30,6 +30,7 @@ https://tycarla.github.io/st.bede-medical-center/
 ---
 
 ## 📁 Folder Structure
+```
 st-bede-medical-center/
 ├── index.html
 ├── appointment.html
@@ -50,4 +51,6 @@ st-bede-medical-center/
 ├── phone-icon.png
 ├── telephone-icon.png
 └── README.md
+
+```
 
