@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Patient Record - 4525235</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Inter', sans-serif;
+      background-color: #d4f7f8;
+      color: #333;
+    }
+
+    a.back-link {
+      color: #2dbdaa;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #ccc;
+    }
+
+    .profile-info {
+      flex: 1;
+    }
+
+    .profile-info strong {
+      font-size: 1.2rem;
+      display: block;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.3rem 1.5rem;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+
+    .record-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e5e9f2;
+    }
+
+    .section-colored {
+      background-color: #eaf6fb;
+      border-left: 5px solid #70c1b3;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 8px;
+    }
+
+    .section-colored ul, .section-colored li {
+      list-style: none;
+      padding: 0;
+      margin: 0.2rem 0;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 12px;
+      margin-left: 0.5rem;
+    }
+
+    .severe { background: #ffb3ba; color: #b30000; }
+    .moderate { background: #ffe3a3; color: #c06e00; }
+    .mild { background: #baffc9; color: #1c6b30; }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .table th, .table td {
+      padding: 0.5rem;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+    }
+
+    canvas {
+      margin-top: 1rem;
+      width: 100% !important;
+      height: 250px !important;
+    }
+  </style>
+</head>
+<body>
+
+<a class="back-link" href="index.html">← Back to Verification</a>
+
+<div class="profile">
+  <img class="profile-img" src="patient1.jpg" alt="Patient Photo">
+  <div class="profile-info">
+    <strong>Justin Robson</strong>
+    <div class="info-grid">
+      <div><strong>ID:</strong> 4525235</div>
+      <div><strong>Date of Birth:</strong> Jan 20, 1946</div>
+      <div><strong>Last Hospital Visit:</strong> June 15, 2025</div>
+      <div><strong>Contact:</strong> justin.robson@email.com</div>
+      <div><strong>Phone:</strong> (123) 456-7890</div>
+      <div><strong>Insurance:</strong> MediCare Plus - #MC8435</div>
+    </div>
+  </div>
+</div>
+
+<div class="record-grid">
+
+  <div class="card">
+    <h2>Vital Signs</h2>
+    <div class="section-colored">
+      <ul>
+        <li><strong>Blood Pressure:</strong> 130/85 mmHg</li>
+        <li><strong>Heart Rate:</strong> 78 bpm</li>
+        <li><strong>Temperature:</strong> 36.9°C</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Diagnoses</h2>
+    <div class="section-colored">
+      <strong>Chronic:</strong>
+      <ul>
+        <li>Diabetes</li>
+        <li>Rheumatoid arthritis</li>
+        <li>Hypertension</li>
+      </ul>
+      <strong>Acute:</strong>
+      <ul>
+        <li>Bronchitis</li>
+        <li>Pneumonia</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Medications</h2>
+    <div class="section-colored">
+      <strong>Active:</strong>
+      <ul>
+        <li>Albuterol HFA</li>
+        <li>Aspirin</li>
+        <li>Belcomethasone HFA</li>
+      </ul>
+      <strong>Last:</strong>
+      <ul>
+        <li>Lisinopril (Prinivil)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Allergies</h2>
+    <div class="section-colored">
+      <strong>Drug:</strong>
+      <ul>
+        <li>Aspirin <span class="badge severe">Severe</span></li>
+        <li>Amoxicillin <span class="badge moderate">Moderate</span></li>
+      </ul>
+      <strong>Food:</strong>
+      <ul>
+        <li>Peanuts <span class="badge severe">Severe</span></li>
+      </ul>
+    </div>
+    <canvas id="allergyChart"></canvas>
+  </div>
+
+  <div class="card">
+    <h2>Social History</h2>
+    <table class="table">
+      <thead>
+        <tr><th>Item</th><th>Response</th><th>Risk</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Smoking</td><td>None</td><td>0</td></tr>
+        <tr><td>Alcohol</td><td>No use</td><td>1</td></tr>
+        <tr><td>Mental Health</td><td>No issues</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h2>Immunization Status</h2>
+    <div class="section-colored">
+      <ul>
+        <li>COVID-19 (Pfizer) - Complete</li>
+        <li>Flu Shot - Nov 2024</li>
+        <li>Tetanus Booster - Due 2026</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const ctx = document.getElementById('allergyChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Severe', 'Moderate', 'Mild'],
+      datasets: [{
+        label: 'Allergy Severity',
+        data: [2, 1, 0],
+        backgroundColor: ['#ffb3ba', '#ffe3a3', '#baffc9'],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      plugins: {
+        legend: {
+          position: 'bottom'
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Record</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      padding: 2rem;
+    }
+
+    .record-container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #004c97;
+    }
+
+    .info-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .info-group label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    .info-group p {
+      padding: 0.5rem;
+      background-color: #eef3f7;
+      border-radius: 5px;
+      margin: 0;
+    }
+
+    .back-button {
+      display: block;
+      margin: 2rem auto 0;
+      padding: 0.75rem 1.5rem;
+      background-color: #0074d9;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      width: fit-content;
+    }
+  </style>
+</head>
+<body>
+  <div class="record-container">
+    <h2>Patient Record</h2>
+
+    <div class="info-group"><label>Patient ID:</label><p id="pid"></p></div>
+    <div class="info-group"><label>Name:</label><p id="name"></p></div>
+    <div class="info-group"><label>Age:</label><p id="age"></p></div>
+    <div class="info-group"><label>Medication Barcode:</label><p id="barcode"></p></div>
+    <div class="info-group"><label>Prescription:</label><p id="prescription"></p></div>
+
+    <a class="back-button" href="index.html">← Back to Verification</a>
+  </div>
+
+  <script>
+    // Patient records
+    const patients = {
+      "4525235": {
+        name: "John Doe",
+        age: 42,
+        barcode: "32323424",
+        prescription: "ABC-100 — 2 tablets daily after meals"
+      },
+      "3223424": {
+        name: "Jane Smith",
+        age: 35,
+        barcode: "55667788",
+        prescription: "Paracetamol — 500mg every 6 hours"
+      },
+      "1234567": {
+        name: "Alex Reyes",
+        age: 29,
+        barcode: "11223344",
+        prescription: "Amoxicillin — 3x a day for 7 days"
+      },
+      "7896541": {
+        name: "Samantha Cruz",
+        age: 50,
+        barcode: "99887766",
+        prescription: "Metformin — 1 tablet daily"
+      },
+      "6677889": {
+        name: "Carlos Tan",
+        age: 63,
+        barcode: "44556677",
+        prescription: "Lisinopril — 10mg once a day"
+      }
+    };
+
+    // Get patient ID from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+
+    const patient = patients[id];
+
+    if (patient) {
+      document.getElementById("pid").textContent = id;
+      document.getElementById("name").textContent = patient.name;
+      document.getElementById("age").textContent = patient.age;
+      document.getElementById("barcode").textContent = patient.barcode;
+      document.getElementById("prescription").textContent = patient.prescription;
+    } else {
+      document.querySelector(".record-container").innerHTML = "<h2>Record Not Found</h2><a class='back-button' href='index.html'>← Back</a>";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+1.
+Patient ID: 1234567
+Barcode: 11223344
+
+2.
+Patient ID: 7896541
+Barcode: 99887766
+
+3.
+Patient ID: 6677889
+Barcode: 44556677
+
+
+Add features:
+Vital Signs, Immunization Status, date of birth, contact information, and insurance details
+
+Design:
+Modify: Medical Records - like steam
+
+Additional Feature request by the client:
+
+
+Home page content:
+Name of the hospital: St. Bede Medical Center
+About us (Brief description) 
+Services (Health Packages): 
+
+News (Articles, News about Health)
+Posters about health events
+Contact us
+Email 
+Contact Number
+Make an appointment
+List of Doctors
+Schedule
+Appointment Link
+Reason for check up 
+Name
+Age
+Laboratories
+EMR/EHR
+
+
+

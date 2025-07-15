@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medication Verification System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="back-link" href="index.html">← Back to Home Page</a>
+
+  <div class="container">
+    <h1>Medication Verification System</h1>
+    <form id="verificationForm">
+      <label for="patientId">Patient ID:</label>
+      <input type="text" id="patientId" required />
+
+      <label for="medicationCode">Medication Barcode:</label>
+      <input type="text" id="medicationCode" required />
+
+      <button type="submit">Verify Medication</button>
+    </form>
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
