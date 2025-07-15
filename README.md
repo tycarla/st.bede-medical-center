@@ -30,22 +30,21 @@ https://tycarla.github.io/st.bede-medical-center/
 ---
 
 ## 📁 Folder Structure
-###
-📁 st-bede-medical-center/
-├── index.html
-├── appointment.html
-├── ERM.html
-├── doctor-invite.png
-├── background2.png
-├── logo.png
-├── icon-vision.png
-├── icon-mission.png
-├── service1.png
-├── service2.png
-├── service3.png
-├── service4.png
-├── news1.jpg
-├── news2.jpg
-├── news3.jpg
-└── README.md
-###
+###📁 st-bede-medical-center/
+###├── index.html
+###├── appointment.html
+###├── ERM.html
+###├── doctor-invite.png
+###├── background2.png
+###├── logo.png
+###├── icon-vision.png
+###├── icon-mission.png
+###├── service1.png
+###├── service2.png
+###├── service3.png
+###├── service4.png
+###├── news1.jpg
+###├── news2.jpg
+###├── news3.jpg
+###└── README.md
+
