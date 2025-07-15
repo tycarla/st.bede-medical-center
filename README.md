@@ -30,6 +30,7 @@ https://tycarla.github.io/st.bede-medical-center/
 ---
 
 ## 📁 Folder Structure
+###
 📁 st-bede-medical-center/
 ├── index.html
 ├── appointment.html
@@ -47,11 +48,4 @@ https://tycarla.github.io/st.bede-medical-center/
 ├── news2.jpg
 ├── news3.jpg
 └── README.md
-
-
----
-
-## 📬 Contact
-
-If you have questions or suggestions, feel free to email:  
-**stbedemedicalcenter@gmail.com**
+###
