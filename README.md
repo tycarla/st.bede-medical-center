@@ -5,8 +5,7 @@ This is a responsive front-end website for **St. Bede Medical Center**, featurin
 ## 🌐 Live Website
 
 You can visit the deployed website here:  
-[https://yourusername.github.io/st-bede-medical-center](https://yourusername.github.io/st-bede-medical-center)  
-*(Replace with your actual GitHub Pages link.)*
+https://tycarla.github.io/st.bede-medical-center/
 
 ---
 
