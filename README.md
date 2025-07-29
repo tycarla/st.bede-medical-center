@@ -24,6 +24,7 @@ https://tycarla.github.io/st.bede-medical-center/
 ## 🛠 Technologies Used
 - HTML5
 - CSS3
+- Javascript
 - Google Fonts (Inter)
 - Responsive Web Design
 
